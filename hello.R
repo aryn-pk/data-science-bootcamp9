@@ -14,3 +14,8 @@ df %>%
   select(1:10) %>%
   filter(country == 'Thailand') %>%
   arrange(-income)
+
+## plot new histrogram
+library(ggplot2)
+ggplot(df2, aes(income)) +
+  geom_histrograme()
